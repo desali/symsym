@@ -1,0 +1,67 @@
+.find-component {
+
+}
+
+.find-component .header {
+  height: 5rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid gray;
+  cursor: default;
+}
+
+.find-component .main {
+
+}
+
+.find-component .main .place {
+
+}
+
+.input-group {
+
+}
+
+.find-component .main .place .search-input {
+  width: 100%;
+}
+
+.find-component .main .place .marker {
+  width: 8%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.fa-map-marker, .fa-search, .fa-trash-alt {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.button-group {
+  height: 3rem;
+}
+
+.add-button {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+}
+
+.done-button {
+  background-color: green;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.map {
+  height: 30rem;
+  border: 1px solid gray;
+}
+
+.title {
+  color: green;
+  text-decoration: none;
+}
