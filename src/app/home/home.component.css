@@ -1,0 +1,40 @@
+.home{
+	display: flex;
+	height: 27rem;
+	flex-direction: column;
+	width: 50em;
+	align-items: center;
+	align-self: center;
+	justify-content: space-around;
+	margin:auto;
+	margin-top: 13rem;
+	background-color: #6c757d;
+}
+.top{
+	display: flex;
+	height: 50%;
+	width: 70%;
+	flex-direction: column;
+	align-items: center;
+}
+.bot{
+	height: 2.5rem;
+	width: 50%;
+	display: flex;
+	margin-bottom: 0.5em;
+}
+.title{
+	font-size: 5.2rem;
+}
+.coll{
+	color: white;
+}
+.divider{
+	width: 100%;
+}
+.outhome{
+	display: flex;
+	height: 48rem;
+	background-color: #e9ecef;
+	
+}

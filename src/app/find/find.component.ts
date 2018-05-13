@@ -8,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FindComponent implements OnInit {
 
   constructor() {
-    this.places = [
-      null
-    ];
+    
   }
 
   ngOnInit() {
