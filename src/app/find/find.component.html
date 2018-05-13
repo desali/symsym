@@ -2,9 +2,25 @@
   <div class="header w-100 d-flex justify-content-center align-items-center">
     Sym Sym
   </div>
-  <div class="main w-100 d-flex flex-column">
-    <div *ngFor='' class="place w-75">
-      <input type="text" name="" value="">
+  <div class="main w-100 d-flex flex-column align-items-center">
+    <div *ngFor='let place of places; let i = index' class="place w-75 d-flex align-items-center">
+      <div class="input-group mb-2">
+        <input type="text" class="form-control search-input" placeholder="Search for place..." [(ngModel)]=place.title [disabled]="isDisabled(i)">
+        <div class="marker d-flex justify-content-center align-items-center">
+          <i *ngIf="place.title === '' || place.title === null && !isDisabled(i)" class="fas fa-map-marker"></i>
+          <i *ngIf="place.title !== '' && place.title !== null && !isDisabled(i)" class="fas fa-search"></i>
+          <i (click)="deletePlace(i)" *ngIf="isDisabled(i)"  class="fas fa-trash-alt"></i>
+        </div>
+      </div>
     </div>
+
+    <div class="button-group w-75 d-flex justify-content-center align-items-center">
+      <button (click)="addPlace()" type="button" class="btn add-button mr-2">Add</button>
+      <button type="button" class="btn done-button">Done</button>
+    </div>
+  </div>
+
+  <div class="map w-100" id='mapContainer'>
+
   </div>
 </div>
